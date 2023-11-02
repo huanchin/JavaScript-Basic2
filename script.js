@@ -117,11 +117,11 @@ const rest2 = {
 // OR assignment operator
 // rest1.numGuests = rest1.numGuests || 10;
 // rest2.numGuests = rest2.numGuests || 10;
-rest1.numGuests ||= 10;
-rest2.numGuests ||= 10;
+// rest1.numGuests ||= 10; // assign value (10) if (rest1.numGuests) is falsy
+// rest2.numGuests ||= 10;
 
 // nullish assignment operator (null or undefined)
-rest1.numGuests ??= 10;
+rest1.numGuests ??= 10; // assign value (10) if (rest1.numGuests) is nullish
 rest2.numGuests ??= 10;
 
 // AND assignment operator
